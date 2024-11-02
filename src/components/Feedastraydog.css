@@ -1,0 +1,201 @@
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.content-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.content-text {
+  width: 100%;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .content-text {
+    padding: 0;
+  }
+}
+
+.volunteer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .volunteer-page {
+    flex-direction: row;
+    gap: 1%;
+  }
+}
+
+.left-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (min-width: 768px) {
+  .left-side {
+    width: 45%;
+  }
+}
+
+.side-content {
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stacked-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3px;
+  max-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .form-section {
+    flex-direction: row;
+    width: 55%;
+  }
+}
+
+.form-container {
+  flex: 2;
+  padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: left;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 5px;
+}
+
+.food-total-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (min-width: 768px) {
+  .food-total-group {
+    flex-direction: row;
+    gap: 2%;
+  }
+}
+
+.food-count-group,
+.total-amount-group {
+  flex: 1;
+}
+
+label {
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  height: 32px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 8px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-top: 3px;
+  padding: 3px;
+}
+
+@media (min-width: 768px) {
+  .qr-code-container {
+    padding: 15px;
+  }
+}
+
+.qr-code-image {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .qr-code-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.upload-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-container {
+  margin-bottom: 3px;
+  text-align: left;
+  padding: 0;
+  width: 100%;
+}

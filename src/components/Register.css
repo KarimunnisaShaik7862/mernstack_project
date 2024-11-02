@@ -1,0 +1,87 @@
+/* Register.css */
+
+.Register {
+  max-width: 400px; /* Adjusted to be slightly larger */
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Added to position the close button */
+}
+
+.Register .close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ff0000;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Positioned in the top-right corner */
+}
+
+.Register .user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Register .form-group {
+  margin-bottom: 15px;
+}
+
+.Register .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.Register .form-group input,
+.Register .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.Register button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px; /* Reduced padding for a smaller width */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+  transition: background-color 0.3s ease;
+  width: auto; /* Allows button width to be determined by its content */
+  align-self: center; /* Centering the button */
+}
+
+.Register button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.Register p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .Register {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .Register .close-button {
+    font-size: 20px;
+  }
+
+  .Register button[type="submit"] {
+    font-size: 12px; /* Further reduce font size for smaller screens */
+    padding: 6px 12px; /* Further reduce padding */
+  }
+}
